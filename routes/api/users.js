@@ -28,7 +28,7 @@ router.post('/login', (req, res) => {
             success: true,
             token: 'clement' + token
           })
-        })
+        });
       } else {
         return res.status(400).json({msg: "Error Password"})
       }
@@ -59,4 +59,5 @@ router.post('/register', (req, res) => {
     }
   })
 })
+router.get('/current', )
 module.exports = router;
