@@ -1,8 +1,8 @@
 const express = require("express");
 const mongoose = require("mongoose");
-const users = require("./routes/api/users");
 const bodyParser = require("body-parser");
 const passport = require("passport")
+const users = require("./routes/api/users");
 const port = process.env.PORT || 5000;
 const dbUrl = "mongodb://127.0.0.1:27017/friends";
 
